@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: url("../img/background.jpeg") no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 605px;
+    height: 545px;
+    margin: 5% auto;
+    color: white;
+    background-color: #212534;
+    -webkit-box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+    .tabs_header {
+        background-color: #2b3040;
+        height: 115px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 16px;
+        .tab_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0.5;
+            width: 160px;
+            padding: 30px 0;
+            .item_icon {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 15px;
+            }
+        }
+        .active {
+            opacity: 1;
+            border-bottom: 2px solid white;
+        }
+    }
+    .tabs_wrapper {
+        .tabs_content {
+            display: none;
+            margin: 0 auto;
+            .tabs_content-inner {
+                margin: 60px 50px;
+                display: flex;
+                height: 310px;
+                .content_left {
+                    width: 170px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .stars_wrapper {
+                        display: inline-block;
+                        margin-left: -11px;
+                        .fa-star {
+                            &:before {
+                                margin: 0 5px;
+                            }
+                            &:hover {
+                                color: #e4be03;
+                            }
+                        }
+                    }
+                }
+                .content_right {
+                    display: flex;
+                    flex-direction: column;
+                    width: 325px;
+                    justify-content: space-between;
+                    padding-left: 40px;
+                    .first {
+                        display: flex;
+                        justify-content: space-between;
+                        .title {
+                            font-size: 32px;
+                            padding: 10px 0;
+                        }
+                        .subtitle {
+                            font-size: 14px;
+                            color: #fdfdfd;
+                            text-transform: capitalize;
+                        }
+                        .rating_svg {
+                            width: 90px;
+                            height: 90px;
+                            -webkit-transform: rotate(90deg);
+                            transform: rotate(90deg);
+                            position: absolute;
+                            margin: -10px 0px 0px 225px;
+                            .circle-bg {
+                                stroke: #b7bacd;
+                                stroke-width: 1px;
+                                fill: transparent;
+                            }
+                            .circle {
+                                stroke: #13e28d;
+                                stroke-width: 6px;
+                                stroke-dasharray: 484;
+                                fill: transparent;
+                            }
+                            .percentage {
+                                font-family: 'Lato', sans-serif;
+                                font-size: 25px;
+                                text-anchor: middle;
+                                stroke-width: 0;
+                                fill: #b7bacd;
+                            }
+                        }
+                    }
+                    .middle {
+                        .description {
+                            color: #b7bacd;
+                            font-size: 14px;
+                            line-height: 22px;
+                            width: 305px;
+                        }
+                    }
+                    .end {
+                        display: flex;
+                        justify-content: space-between;
+                        .discount {
+                            color: #fedd3f;
+                            font-size: 12px;
+                            font-weight: 700;
+                        }
+                        .price {
+                            font-size: 32px;
+                        }
+                        .btnBuy {
+                            border-radius: 2px;
+                            border: none;
+                            background-color: #13e28d;
+                            width: 164px;
+                            height: 55px;
+                            text-transform: uppercase;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .active {
+            display: block;
+        }
+        .other {
+            text-transform: uppercase;
+            color: #fedd3f;
+            font-size: 20px;
+            text-align: center;
+            margin: 30px;
+            .ratings {
+                width: 200px;
+                height: 300px;
+                padding: 30px;
+            }
+            .buy {
+                width: 300px;
+                height: 300px;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+@import 'media';

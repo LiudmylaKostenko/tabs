@@ -1,0 +1,27 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .main {
+        height: 720px!important;
+        width: 100%!important;
+        .tabs_wrapper {
+            .tabs_content-inner {
+                flex-wrap: wrap;
+                margin: 60px 25px!important;
+                .content_right {
+                    padding-left: 0!important;
+                    .middle {
+                        .description {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+                .other {
+                    .buy {
+                        width: 270px;
+                        height: 270px;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

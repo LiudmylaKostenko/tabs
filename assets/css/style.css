@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: url("../img/background.jpeg") no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+.main {
+  width: 605px;
+  height: 545px;
+  margin: 5% auto;
+  color: white;
+  background-color: #212534;
+  -webkit-box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+}
+
+.main .tabs_header {
+  background-color: #2b3040;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 16px;
+}
+
+.main .tabs_header .tab_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  opacity: 0.5;
+  width: 160px;
+  padding: 30px 0;
+}
+
+.main .tabs_header .tab_item .item_icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.main .tabs_header .active {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+
+.main .tabs_wrapper .tabs_content {
+  display: none;
+  margin: 0 auto;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner {
+  margin: 60px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 310px;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_left {
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_left .stars_wrapper {
+  display: inline-block;
+  margin-left: -11px;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_left .stars_wrapper .fa-star:before {
+  margin: 0 5px;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_left .stars_wrapper .fa-star:hover {
+  color: #e4be03;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 325px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 40px;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .first .title {
+  font-size: 32px;
+  padding: 10px 0;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .first .subtitle {
+  font-size: 14px;
+  color: #fdfdfd;
+  text-transform: capitalize;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .first .rating_svg {
+  width: 90px;
+  height: 90px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  margin: -10px 0px 0px 225px;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .first .rating_svg .circle-bg {
+  stroke: #b7bacd;
+  stroke-width: 1px;
+  fill: transparent;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .first .rating_svg .circle {
+  stroke: #13e28d;
+  stroke-width: 6px;
+  stroke-dasharray: 484;
+  fill: transparent;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .first .rating_svg .percentage {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  text-anchor: middle;
+  stroke-width: 0;
+  fill: #b7bacd;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .middle .description {
+  color: #b7bacd;
+  font-size: 14px;
+  line-height: 22px;
+  width: 305px;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .end .discount {
+  color: #fedd3f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .end .price {
+  font-size: 32px;
+}
+
+.main .tabs_wrapper .tabs_content .tabs_content-inner .content_right .end .btnBuy {
+  border-radius: 2px;
+  border: none;
+  background-color: #13e28d;
+  width: 164px;
+  height: 55px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main .tabs_wrapper .active {
+  display: block;
+}
+
+.main .tabs_wrapper .other {
+  text-transform: uppercase;
+  color: #fedd3f;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px;
+}
+
+.main .tabs_wrapper .other .ratings {
+  width: 200px;
+  height: 300px;
+  padding: 30px;
+}
+
+.main .tabs_wrapper .other .buy {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main {
+    height: 720px !important;
+    width: 100% !important;
+  }
+  .main .tabs_wrapper .tabs_content-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 60px 25px !important;
+  }
+  .main .tabs_wrapper .tabs_content-inner .content_right {
+    padding-left: 0 !important;
+  }
+  .main .tabs_wrapper .tabs_content-inner .content_right .middle .description {
+    padding-top: 10px;
+  }
+  .main .tabs_wrapper .tabs_content-inner .other .buy {
+    width: 270px;
+    height: 270px;
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
